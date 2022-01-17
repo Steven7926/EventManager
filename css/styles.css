@@ -1,0 +1,367 @@
+h1
+{
+   font-size: xx-large;
+}
+h2
+{
+   font-size: large;
+}
+hr.phat
+{
+   border: 5px solid white;
+   border-radius: 5px;
+}
+hr.smol
+{
+   border: 2px solid rgb(105, 89, 179);
+   border-radius: 5px;
+}
+.heading
+{
+   color:rgb(255, 255, 255);
+   font-weight: bold;
+   font-family: 'Arial';
+   text-align: center;
+}
+.labels
+{
+   color: rgb(105, 89, 179);
+   font-weight: bold;
+   font-family: 'Arial';
+   text-align: center;
+}
+.descriptions
+{
+   color: rgb(83, 83, 83);
+   font-weight: bold;
+   font-family: 'Arial';
+   text-align: center;
+}
+.buttons
+{
+   text-align: center;
+   font-family:'Arial';
+   font-weight: bold;
+   font-size: medium;
+   background-color: rgb(105, 89, 179);
+   color:rgb(255, 255, 255);
+   border-radius: 5px;
+   width: 50%;
+   height: 40px;
+   cursor: pointer;
+   display: inline-block;
+   border: solid 1px;
+}
+.usersum
+{
+   border-radius: 5px;
+   border: solid;
+   width: 20%;
+   box-shadow: 10px 10px grey;
+   color:rgb(255, 255, 255);
+   text-align: center;
+   background-color: white;
+}
+.usersumback
+{
+   margin: auto;
+   width: 80%;
+   float: left;
+   padding-left: 10px;
+}
+.contable
+{
+   border-radius: 5px;
+   border: solid;
+   width: 94%;
+   height: 75vh;
+   box-shadow: 6px 6px grey;
+   color:rgb(255, 255, 255);
+   text-align: center;
+   background-color: white;
+}
+.tableback
+{
+   margin: auto;
+   width: 85%;
+   float: left;
+   padding-left: 10%;
+}
+.searchbar
+{
+   padding-left: 10%;
+   position: relative;
+   width: 80%;
+}
+.searching
+{
+   width: 25%;
+   height: 25px;
+   border-radius: 5px;
+   font-size: large;
+   font-family: 'Arial';
+   border: 2px solid grey;
+}
+.searchbutton
+{
+   background-color: rgb(255, 255, 255);
+   color:rgb(105, 89, 179);
+   border-radius: 5px;
+   width: 3%;
+   height: 33px;
+   cursor: pointer;
+   display: inline-block;
+   border: 2px solid grey;
+
+}
+.addnewbutton
+{
+   background-color: rgb(255, 255, 255);
+   color:rgb(105, 89, 179);
+   border-radius: 5px;
+   width: 11%;
+   height: 40px;
+   cursor: pointer;
+   border: 2px solid grey;
+   float: right;
+   
+}
+
+
+/* The Close Button */
+.close 
+{
+   color: #aaaaaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus 
+{
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/**************************/
+.modal 
+{
+   display: none;
+   position: fixed; 
+   padding-top: 50px;
+   left: 0; 
+   top: 0;
+   width: 100%;
+   height: 100%; 
+   background-color: rgb(0, 0, 0);
+   background-color: rgba(0, 0, 0, 0.5);
+}
+.modaleditting
+{
+   position: fixed; 
+   padding-top: 50px;
+   left: 0; 
+   top: 0;
+   width: 100%;
+   height: 100%; 
+   background-color: rgb(0, 0, 0);
+   background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content 
+{
+   position: relative;          
+   padding: 20px; 
+   margin: auto; 
+   width: 75%;  
+   -webkit-animation-name: animatetop;
+   -webkit-animation-duration: 0.4s;
+   animation-name: animatetop;
+   animation-duration: 0.4s
+}
+.close-btn 
+{
+   float: right; 
+   color: lightgray; 
+   font-size: 24px;  
+   font-weight: bold;
+}
+.close-btn:hover 
+{
+   color: darkgray;
+}
+@-webkit-keyframes animatetop 
+{
+   from {top:-300px; opacity:0} 
+   to {top:0; opacity:1}
+}
+@keyframes animatetop 
+{
+   from {top:-300px; opacity:0}
+   to {top:0; opacity:1}
+}
+
+/***********************************/
+.usersumback
+{
+   margin: auto;
+   width: 80%;
+   float: left;
+   padding-left: 10px;
+}
+.usersum
+{
+   border-radius: 5px;
+   border: solid;
+   width: 20%;
+   box-shadow: 10px 10px grey;
+   color:rgb(255, 255, 255);
+   text-align: center;
+   background-color: white;
+}
+.descriptions
+{
+   color: rgb(83, 83, 83);
+   font-weight: bold;
+   font-family: 'Arial';
+   text-align: center;
+}
+.container
+{
+   width: 600px;
+   height:  500px;
+   background-color: white;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 100px;
+   border-radius: 5px;
+   box-shadow: 10px 10px  rgb(105, 89, 179);
+   text-align: center;
+}
+hr 
+{
+   border: 2px solid rgb(105, 89, 179);
+   border-radius: 5px;
+}
+#heading
+{
+   color: rgb(105, 89, 179);
+   font-weight: bold;
+   font-family: 'Arial';
+}
+.userLevel
+{
+   color: gray;
+   font-family: Arial;
+   font-weight: bold;
+}
+.logininputs
+{
+   width: 300px;
+   height: 25px;
+   border-radius: 5px;
+   font-size: large;
+   font-family: 'Arial';
+}
+.dateinputs
+{
+   width: 125px;
+   height: 25px;
+   border-radius: 5px;
+   font-size: large;
+   font-family: 'Arial';
+}
+.signupbtn
+{
+   text-align: center;
+   font-family:'Arial';
+   font-weight: bold;
+   font-size: large;
+   background-color: rgb(105, 89, 179);
+   color:rgb(255, 255, 255);
+   border-radius: 8px;
+   width: 150px;
+   height: 50px;
+   cursor: pointer;
+   display: inline-block;
+   border: 2px solid grey;
+}
+.tbl_contacts
+{
+   font-family: 'Arial';
+   color: rgb(255, 255, 255);
+   border: 4px solid grey;
+   border-radius: 3px;
+   width: 100%;
+   font-size: large;
+   background-color:rgb(105, 89, 179) ;
+}
+td
+{
+   color: rgb(83, 83, 83);
+   font-weight: bold;
+   font-family: 'Arial';
+   font-size: medium;
+   text-align: center;
+}
+.editbtn
+{
+   border: 2px solid grey;
+   font-family: 'Arial';
+   border-radius: 3px;
+   color: rgb(255, 255, 255);
+   background-color: rgb(105, 89, 179);
+   cursor: pointer;
+   text-align: center;
+   font-weight: bold;
+   padding-left: 10%;
+   padding-right: 10%;
+
+}
+.deletebtn
+{
+   border: 2px solid grey;
+   font-family: 'Arial';
+   border-radius: 3px;
+   color: rgb(255, 255, 255);
+   background-color: red;
+   cursor: pointer;
+   text-align: center;
+   font-weight: bold;
+   padding-left: 8%;
+   padding-right: 8%;
+}
+.data
+{
+   position: static !important;
+}
+.tableinfo
+{
+   font-family: 'Arial';
+   color: rgb(83, 83, 83);
+}
+.searchtable
+{
+   margin-bottom: 8px;
+   margin-right: 5px;
+   margin-top: 8px;
+}
+.showentriestable
+{
+   margin-bottom: 8px;
+   margin-left: 5px;
+   margin-top: 8px;
+}
+table.dataTable tbody th, table.dataTable tbody td {
+   padding: 8px 2px !important;
+}
+.tableheader
+{
+   float: left;
+   padding-left: 70vh;
+   font-weight: bold;
+   font-size: xx-large;
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+}

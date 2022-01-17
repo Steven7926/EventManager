@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <style>
+        h1
+        {
+            font-size: xx-large;
+        }
+        h2
+        {
+            font-size: large;
+        }
+        hr.phat
+        {
+            border: 5px solid white;
+            border-radius: 5px;
+            height: 5px;
+        }
+        hr.smol
+        {
+            border: 2px solid rgb(105, 89, 179);
+            border-radius: 5px;
+        }
+        .heading
+        {
+            color:rgb(255, 255, 255);
+            font-weight: bold;
+            font-family: 'Arial';
+            text-align: center;
+        }
+        .labels
+        {
+            color: rgb(105, 89, 179);
+            font-weight: bold;
+            font-family: 'Arial';
+            text-align: center;
+        }
+        .descriptions
+        {
+            color: rgb(83, 83, 83);
+            font-weight: bold;
+            font-family: 'Arial';
+            text-align: center;
+        }
+        .buttons
+        {
+            text-align: center;
+            font-family:'Arial';
+            font-weight: bold;
+            font-size: medium;
+            background-color: rgb(105, 89, 179);
+            color:rgb(255, 255, 255);
+            border-radius: 5px;
+            width: 50%;
+            height: 40px;
+            cursor: pointer;
+            display: inline-block;
+            border: solid 1px;
+        }
+        .smallbtn
+        {
+            text-align: center;
+            font-family:'Arial';
+            font-size: medium;
+            background-color: rgb(255, 255, 255);
+            color:rgb(83, 83, 83);
+            border-radius: 5px;
+            width: 20%;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid;
+        }
+        .loginframe
+        {
+            border-radius: 5px;
+            border: solid;
+            width: 30%;
+            height: 500px;
+            box-shadow: 10px 10px grey;
+            color:rgb(255, 255, 255);
+            text-align: center;
+            background-color: white;
+            margin:auto
+        }
+        .logininputs
+        {
+            width: 70%;
+            height: 25px;
+            border-radius: 5px;
+            font-size: large;
+            font-family: 'Arial';
+        }
+        .modalinputs
+        {
+            width: 400px;
+            height: 25px;
+            border-radius: 5px;
+            font-size: large;
+            font-family: 'Arial';
+        }
+        .signupbtn
+        {
+            text-align: center;
+            font-family:'Arial';
+            font-weight: bold;
+            font-size: large;
+            background-color: rgb(105, 89, 179);
+            color:rgb(255, 255, 255);
+            border-radius: 8px;
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            display: inline-block;
+            border: 2px solid grey;
+        }
+        .container
+        {
+            width: 600px;
+            height:  500px;
+            background-color: white;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 100px;
+            border-radius: 5px;
+            box-shadow: 10px 10px  grey;
+            text-align: center;
+        }
+        .successuser
+        {
+            width: 400px;
+            height:  100px;
+            background-color: white;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 100px;
+            border-radius: 5px;
+            box-shadow: 10px 10px  grey;
+            text-align: center;
+        }
+
+        .success 
+        {
+            color: rgb(9, 122, 24);
+            font-weight: bold;
+            font-family: 'Arial';
+            text-align: center;
+        }
+
+            /* The Close Button */
+        .close 
+        {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus 
+        {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /**************************/
+        .modal 
+        {
+            display: none;
+            position: fixed; 
+            padding-top: 50px;
+            left: 0; 
+            top: 0;
+            width: 100%;
+            height: 100%; 
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .modal-content 
+        {
+            position: relative; 
+            padding: 20px; 
+            margin: auto; 
+            width: 75%;  
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+        .close-btn 
+        {
+            float: right; 
+            color: lightgray; 
+            font-size: 24px;  
+            font-weight: bold;
+        }
+        .close-btn:hover 
+        {
+            color: darkgray;
+        }
+        @-webkit-keyframes animatetop 
+        {
+            from {top:-300px; opacity:0} 
+            to {top:0; opacity:1}
+        }
+        @keyframes animatetop 
+        {
+            from {top:-300px; opacity:0}
+            to {top:0; opacity:1}
+        }
+    </style>
+
+    <head>
+        <title>
+            Event Manager
+        </title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body style = "background-color: rgb(34, 25, 77); ">
+        <div id = "mainContent">
+            <div class = "heading">
+                    <h1>
+                        Exhibition Center Events
+                    </h1>
+                    <hr class = "phat">
+            </div>
+            <div>
+                <div class = "logback">
+                    </br></br></br>    
+                        <div id = "loginframe" class = "loginframe">
+                            <u class = "descriptions;" style="color: rgb(83, 83, 83);"><p class = "labels" style = "font-size: x-large;">Login</p></u>
+                            <p class = "descriptions"> Welcome! Please login to access your events!</p>
+                            <hr class = "smol">
+                            </br></br>
+                                <div>
+                                    <span class="fa fa-user icon" style = "color: rgb(105, 89, 179);" aria-hidden = "true"></span> 
+                                    <input id ="loginName"  type = "text" class = "logininputs" placeholder="Username"></input>
+                                    <br><br>
+
+                                    <span class="fa fa-lock icon" style = "color: rgb(105, 89, 179);" aria-hidden = "true"></span> 
+                                    <input id = "loginPassword" type = "password" class = "logininputs" placeholder="Password"></input>
+                                    <br><br>
+                                </div>                       
+                                <div id = "signin">
+                                    <button id = "loginButton" type = "submit" class = "buttons" onclick="userEmpty()">Sign in</button>
+                                    <span id = "loginResult"></span>
+                                    <br><br>
+                                    <div style = "color: rgb(83, 83, 83); font-family: 'Arial';">
+                                        <span>Don't have an account?</span>
+                                        <button id="modal-btn" class = "smallbtn" onclick="">Sign up!</button>
+                                        <span id="userAddResult"></span>
+                                        <div id="modal-btn">
+                                            <div class="modal" id = "modaladd">
+                                                    <div class="modal-content">
+                                                        <span class="close-btn"></span>
+                                                        <div class="container">
+                                                            <br>
+                                                            <u class = "descriptions;" style="color: rgb(83, 83, 83);">
+                                                                <p class = "labels" style = "font-size: x-large;">Create Account</p>
+                                                            </u>
+                                                            <p class = 'descriptions'>Please enter your information.</p>
+                                                            <hr class = "smol">
+                                                            <br><br>
+                                                            <form>
+                                                                <div style="text-align: center;">
+                                                                    <span class="fa fa-user icon" style="color: rgb(105, 89, 179);" aria-hidden="true"></span>
+                                                                    <input id = "firstname" type="text" class="modalinputs" placeholder="First Name" required></input>
+                                                                    <br><br>
+                                                                    <span class="fa fa-file" style="color: rgb(105, 89, 179);" aria-hidden="true"></span>
+                                                                    <input id = "lastname" type="text" class="modalinputs" placeholder="Last Name" required></input>
+                                                                    <br><br>
+                                                                    <span class="fa fa-terminal" style="color: rgb(105, 89, 179);" aria-hidden="true"></span>
+                                                                    <input id = "login" type="username" class="modalinputs" placeholder="Username" required></input>
+                                                                    <br><br>
+                                                                    <span class="fa fa-lock" style="color: rgb(105, 89, 179);" aria-hidden="true"></span>
+                                                                    <input id = "password" type="password" class="modalinputs" placeholder="Password" required></input>
+                                                                </div>
+                                                             
+                                                                <br><br><br>
+                                                                <div>
+                                                                    <input id = "addcontact" type="button" class="signupbtn" value = "Add User" onclick = "addUser()"></input>
+                                                                    <input id = "cancel" type="button" class="signupbtn" value = "Cancel" onclick ="closeModal()"></input>
+                                                                </div>  
+                                                            </form>  
+                                                        </div> 
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+    <script>
+        var modalBtn = document.getElementById("modal-btn")
+        var modal = document.querySelector(".modal")
+
+        modalBtn.onclick = function () 
+        {
+            modal.style.display = "block"
+        }
+
+        function closeModal()
+        {
+            modal.style.display = "none"
+        }
+    </script>
+</html>
